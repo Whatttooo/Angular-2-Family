@@ -4,17 +4,29 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { FamilyComponent } from './Family.component'
+import {PersonComponent} from "./Person.component";
+import {PersonService} from "./Person.service";
+
+import {DashboardComponent} from "./Dashboard.component";
+import {AppRoutingModule} from "./app-routing.module";
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    FamilyComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
-  ],
-  providers: [],
+    HttpModule,
+    AppRoutingModule
+    ],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

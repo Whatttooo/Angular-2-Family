@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <ul class="family">
+      <li *ngFor="let person of people" [class.selected]="person === selectedFamily" (click)="onSelect(person)">
+        <span class="badge">{{person.id}}</span> {{person.firstName}} {{person.lastName}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="selectedFamily">
+  <div class="row">
+    <h2>{{selectedFamily.firstName | uppercase}} has been selected</h2>
+  </div>
+  <div class="row">
+    <button class="btn btn-primary" (click)="goToDetail()">View Details</button>
+  </div>
+</div>

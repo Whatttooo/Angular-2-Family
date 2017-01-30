@@ -1,0 +1,22 @@
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  margin-left: 3em;
+}
+button{
+  margin-top: 2em;
+}
+.row{
+  margin-left: 2em;
+}
+input, p{
+  margin-top: 0.5em;
+}

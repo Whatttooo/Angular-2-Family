@@ -1,0 +1,22 @@
+{
+  "data":[
+    {
+      "id": 1,
+      "firstName": "Joshua",
+      "lastName": "Whateley",
+      "relation": "me"
+    },
+    {
+      "id": 2,
+      "firstName":"Sam",
+      "lastName": "Rankin-Hastie",
+      "relation": "My Love"
+    },
+    {
+      "id": 3,
+      "firstName": "Harry",
+      "lastName": "Whateley",
+      "relation": "Brother"
+    }
+  ]
+}

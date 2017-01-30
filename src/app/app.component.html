@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="container-fluid">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <ul class="nav">
+      <li><a routerLink="/dashboard">Dashboard</a></li>
+      <li><a routerLink="/people">Family</a></li>
+      <li><a href="#">New</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row"></div>
+
+<router-outlet></router-outlet>
+

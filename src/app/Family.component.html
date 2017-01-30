@@ -1,0 +1,23 @@
+<div class="container-fluid" *ngIf="person">
+
+    <h2>{{person.firstName}} {{person.lastName}} Details:</h2>
+
+  <div class="row">
+    <label>id: </label><p>{{person.id}}</p>
+  </div>
+  <div class="row">
+    <label>First Name: </label>
+    <input type="text" [(ngModel)]="person.firstName" placeholder="First Name">
+  </div>
+  <div class="row">
+    <label>Last Name: </label>
+    <input type="text" [(ngModel)]="person.lastName" placeholder="Last Name">
+  </div>
+  <div class="row">
+    <label>Relation: </label>
+    <input type="text" [(ngModel)]="person.relation" placeholder="Relation">
+  </div>
+  <div class="row">
+    <button class="btn btn-primary"(click)="goBack()">Back</button>
+  </div>
+</div>
